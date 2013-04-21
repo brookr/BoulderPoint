@@ -1,4 +1,4 @@
-# source "https://railskits.com/gems/#{ENV["RAILSKIT_ID"]}"
+source "https://railskits.com/gems/#{ENV["RAILSKIT_ID"]}"
 source "http://rubygems.org"
 
 ruby "1.9.3"
