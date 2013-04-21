@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: boulder_development
+  pool: 5
+  username: boulder
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: boulder_test
+  pool: 5
+  username: boulder
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: boulder_production
+  pool: 5
+  username: boulder
+  password:

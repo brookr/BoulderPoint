@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @route.user.name %>
+</p>
+
+<p>
+  <b>Problem:</b>
+  <%= @route.problem.name %>
+</p>
+
+<p>
+  <b>Points:</b>
+  <%= @route.problem.points %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @route.notes %>
+</p>
+
+<p>
+  <b>Day:</b>
+  <%= @route.created_at.to_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_route_path(@route) %> |
+<%= link_to 'Back', routes_path %>

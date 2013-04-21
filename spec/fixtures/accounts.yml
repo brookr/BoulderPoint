@@ -1,0 +1,10 @@
+localhost:
+  name: My first account
+  full_domain: test.host
+otherhost:
+  name: Another account
+  full_domain: other.host
+testhost:
+  name: Test Account
+  full_domain: testing.boulder.dev
+
