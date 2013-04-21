@@ -1,5 +1,12 @@
-== Welcome to Boulder Point!
+# Welcome to Boulder Point!
 
 Keep track of your climbing days by scoring your routes.
 
-You set up the scoring mechanism, then enter the difficult of each route you complete. Boulder Point will calculate your total score for each day you do some climbing.
+## Setup
+Sign in as an administrator to set the Problem classificaitons and scoring.
+
+## Track Routes
+For every climb you complete, create a Route, which links a user to a class of Problem.
+
+## Review Scores
+The points earned on the most recent day of climbing will be totaled on the dashboard.
