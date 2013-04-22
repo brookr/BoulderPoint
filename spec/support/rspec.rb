@@ -1,6 +1,6 @@
 RSpec.configure do |config|
   # Only run tests that have this filter, if it exists
-  config.filter_run :debug => true
+  # config.filter_run :debug => true
 
   # == Mock Framework
   #

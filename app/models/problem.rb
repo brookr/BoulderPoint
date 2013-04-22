@@ -1,4 +1,4 @@
 class Problem < ActiveRecord::Base
   belongs_to :account
-  attr_accessible :name, :points
+  attr_accessible :account_id, :name, :points
 end
