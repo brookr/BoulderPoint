@@ -32,3 +32,6 @@
 # Ignoring provisioning files
 /cookbooks
 /.vagrant
+
+# Rbenv/RVM
+.ruby-version
