@@ -1,0 +1,13 @@
+<div class="page-header clearfix">
+  <h1 class="pull-left">Problems</h1>
+
+  <div class="btn-group pull-right">
+    <%= link_to problems_path, class: "btn btn-default #{'active' if current_page? problems_path}" do %>
+      <span class="glyphicon glyphicon-align-left"></span>
+    <% end %>
+
+    <%= link_to new_problem_path, class: "btn btn-default #{'active' if current_page? new_problem_path}" do %>
+      <span class="glyphicon glyphicon-plus"></span>
+    <% end %>
+  </div>
+</div>

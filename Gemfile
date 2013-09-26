@@ -16,6 +16,7 @@ gem "ssl_requirement"
 gem "saas-kit"
 gem "devise-encryptable"
 gem "dynamic_form"
+gem "simple_form"
 
 group :development do
   gem "foreman", "~> 0.53", require: false

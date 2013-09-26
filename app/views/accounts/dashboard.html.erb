@@ -1,16 +1,21 @@
 <h1>Dashboard: Latest scores</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Last Climb</th>
-    <th>Latest Score</th>
-  </tr>
-  <% @users.each do |user| %>
+<table class="table">
+  <thead>
     <tr>
-      <td><%= user.name %></td>
-      <td><%= user.last_climb_day %></td>
-      <td><%= user.last_days_score %></td>
+      <th>Name</th>
+      <th>Last Climb</th>
+      <th>Latest Score</th>
     </tr>
-  <% end %>
+  </thaed>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.last_climb_day %></td>
+        <td><%= user.last_days_score %></td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>

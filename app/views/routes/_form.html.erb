@@ -1,29 +1,7 @@
-<%= form_for(@route) do |f| %>
-  <% if @route.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@route.errors.count, "error") %> prohibited this route from being saved:</h2>
+<%= simple_form_for @route, form_options do |f| %>
+  <%= f.input :user_id, collection: current_account.users, selected: current_user %>
+  <%= f.input :problem_id, collection: current_account.problems %>
+  <%= f.input :notes, as: :text, input_html: { rows: 3 } %>
 
-      <ul>
-      <% @route.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :user %><br />
-    <%= f.collection_select :user_id, current_account.users, :id, :name, {selected: current_user.id} %>
-  </div>
-  <div class="field">
-    <%= f.label :problem %><br />
-    <%= f.collection_select :problem_id, current_account.problems, :id, :name %>
-  </div>
-  <div class="field">
-    <%= f.label :notes %><br />
-    <%= f.text_field :notes %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <%= f.button :submit, class: "btn-primary" %>
 <% end %>

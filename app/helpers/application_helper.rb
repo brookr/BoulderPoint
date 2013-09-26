@@ -1,5 +1,14 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
+  def form_options
+    {
+      html: { fole: "form" },
+      defaults: {
+        input_html: { class: "form-control" }
+      }
+    }
+  end
+
   def flash_notices
     raw([:notice, :error, :alert].collect {|type| content_tag('div', flash[type], :id => type) if flash[type] }.join)
   end

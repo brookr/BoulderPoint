@@ -1,0 +1,13 @@
+<div class="page-header clearfix">
+  <h1 class="pull-left">Users</h1>
+
+  <div class="btn-group pull-right">
+    <%= link_to users_path, class: "btn btn-default #{'active' if current_page? users_path}" do %>
+      <span class="glyphicon glyphicon-align-left"></span>
+    <% end %>
+
+    <%= link_to new_user_path, class: "btn btn-default #{'active' if current_page? new_user_path}" do %>
+      <span class="glyphicon glyphicon-plus"></span>
+    <% end %>
+  </div>
+</div>
