@@ -1,5 +1,5 @@
 body {
-  background: #E1F4F7;
+  background: #1e94ba;
 }
 
 .page-header {
@@ -15,4 +15,16 @@ body {
   background: #ffffff;
   border-radius: 3px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.10);
+}
+
+table {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+
+    .glyphicon {
+      color: #18ae4d;
+    }
+  }
 }
